@@ -63,6 +63,14 @@ public class SinglyLinkedList {
     // Method to get the size of the list
     public int size() {
         // write your solution here
-        return 0;
+
+        int size = 0;
+        Node current = head;
+
+        while(current != null){
+            size += 1;
+            current = current.next;
+        }
+        return size;
     }
 }
